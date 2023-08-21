@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Površina kvadra</title>
+
+<style>
+	#wrapper{
+	width: 400px;
+	margin: auto;
+	margin-top:  100px;
+}
+</style>
+</head>
+<body>
+		<div id="wrapper">
+
+		 <script type="text/javascript">
+
+			var a = parseInt(prompt("Unesi dužinu stranica a:"));
+			var b = parseInt(prompt("Unesi dužinu stranica b:"));
+			var c = parseInt(prompt("Unesi dužinu stranica c:"));
+
+			povrsinaKvadra(a, b, c)	
+
+			function povrsinaKvadra(a, b, c){
+				var P = 2*(a*b + a*c + b*c);
+				document.write("<h3>Površina kvadra je: " + P + " cm<sup>2</sup>!</h3>")
+			}
+
+		 </script>
+		</div>
+</body>
+</html>
