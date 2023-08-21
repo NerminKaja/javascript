@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Površina kruga</title>
+</head>
+<body>
+	<h2>Površina kruga</h2>
+		<script>
+			
+			// Inicijalizacija promjenjivih
+			var r, površina, povrsinaRezultat ;
+
+			//Inicijacizacija i definisanje konstante PI
+		    const PI = 3.14;
+
+		    //Definisanje promjenjive r
+		    r = prompt("Unesi površinu kruga");
+
+		    //Izračunavanje promjenjive površinaRezultat
+		    if((r != 0) && (r > 0)){
+		    povrsina = r*r*PI;
+		    povrsinaRezultat = "<h3> Površina kruga je: " + povrsina + "</h3>";
+		}
+		    document.write(povrsinaRezultat);  
+
+		</script>
+</body>
+</html>
